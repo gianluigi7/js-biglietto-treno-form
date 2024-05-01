@@ -2,7 +2,9 @@ body {
     background-color: rgba(196, 59, 59, 0.918);
 }
 
-label {
+label,
+h3,
+h4 {
     color: rgba(196, 59, 59, 0.918);
 }
 
