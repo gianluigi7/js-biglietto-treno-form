@@ -3,10 +3,12 @@
 const generaButton = document.getElementById('genera-ticket');
 const resetButton = document.getElementById('reset-ticket');
 
+
 generaButton.addEventListener('click', function () {
     
     const ageInput = document.getElementById('age-input');
     const kmInput = document.getElementById('km-input');
+    const ticketElement = document.getElementById('ticket')
 
     
     //calcolo biglietto
@@ -26,7 +28,14 @@ generaButton.addEventListener('click', function () {
     console.log(ageInput.value);
     console.log(kmInput.value);
     console.log(price.toFixed(2));
+
+    ticketElement.classList.remove('d-none')
 });
 
+resetButton.addEventListener('click', function () {
+    const ticketElement = document.getElementById('ticket')
+    
+    ticketElement.classList.add('d-none')
+});
 
 
